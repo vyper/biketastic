@@ -2,6 +2,7 @@
 
 ### Custom ###
 **/functions/lib
+.env
 
 ### Firebase ###
 .idea
