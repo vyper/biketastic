@@ -1,4 +1,6 @@
-import * as express from 'express';
+import * as functions   from 'firebase-functions';
+import * as admin       from 'firebase-admin';
+import * as express     from 'express';
 
 const app = express();
 
@@ -8,12 +10,11 @@ app.get('/strava', (req, res) => {
   return res.status(200).json(response);
 });
 
-app.post('/strava', (req, res) => {
-  console.log(req.body);
-  console.log(req.query);
-  console.log(req.params);
-
-  return res.status(200).json({ method: 'post', body: req.body });
+app.post('/strava', async (req, res) => {
+  const event = req.body;
+  console.log('[STRAVA] Event ' + event.aspect_type + ': ' + event.object_type + '(' + event.object_id + ') for ' + event.owner_id + ' (updates: ' + event.updates + ' @ ' + event.event_time);
+  await admin.firestore().collection('events').add(event);
+  return res.status(200).json({ success: true });
 });
 
 export default app;
