@@ -1,4 +1,3 @@
-import * as functions   from 'firebase-functions';
 import * as admin       from 'firebase-admin';
 import * as express     from 'express';
 
@@ -12,7 +11,7 @@ app.get('/strava', (req, res) => {
 
 app.post('/strava', async (req, res) => {
   const event = req.body;
-  console.log('[STRAVA] Event ' + event.aspect_type + ': ' + event.object_type + '(' + event.object_id + ') for ' + event.owner_id + ' (updates: ' + event.updates + ' @ ' + event.event_time);
+  console.log('[STRAVA] Event ' + event.aspect_type + ': ' + event.object_type + ' (' + event.object_id + ') for ' + event.owner_id + ' (updates: ' + JSON.stringify(event.updates) + ' @ ' + event.event_time);
   await admin.firestore().collection('events').add(event);
   return res.status(200).json({ success: true });
 });

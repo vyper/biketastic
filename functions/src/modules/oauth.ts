@@ -5,15 +5,6 @@ import * as crypto      from 'crypto';
 import axios            from 'axios';
 import * as querystring from 'querystring';
 
-admin.initializeApp({
-  credential: admin.credential.cert({
-    projectId: 'biketastic-x23',
-    clientEmail: (process.env.CREDENTIAL_CLIENT_EMAIL || functions.config().credential.client_email),
-    privateKey: (process.env.CREDENTIAL_PRIVATE_KEY || functions.config().credential.private_key).replace(/\\n/g, '\n')
-  }),
-  databaseURL: 'https://biketastic-x23.firebaseio.com'
-});
-
 const app = express();
 
 const OAUTH_REDIRECT_URI = 'https://us-central1-biketastic-x23.cloudfunctions.net/oauth/callback';
