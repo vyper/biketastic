@@ -1,0 +1,1020 @@
+[
+    {
+        "mode": "NULLABLE",
+        "name": "resource_state",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "athlete",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "resource_state",
+                "type": "INTEGER"
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "distance",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "moving_time",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "elapsed_time",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "total_elevation_gain",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "type",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "workout_type",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "id",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "external_id",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "upload_id",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "start_date",
+        "type": "DATETIME"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "start_date_local",
+        "type": "DATETIME"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "timezone",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "utc_offset",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "REPEATED",
+        "name": "start_latlng",
+        "type": "STRING"
+    },
+    {
+        "mode": "REPEATED",
+        "name": "end_latlng",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "location_city",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "location_state",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "location_country",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "start_latitude",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "start_longitude",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "achievement_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "kudos_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "comment_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "athlete_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "photo_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "map",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "polyline",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "resource_state",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "summary_polyline",
+                "type": "STRING"
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "trainer",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "commute",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "manual",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "private",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "flagged",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "gear_id",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "from_accepted_tag",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "average_speed",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "max_speed",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "average_cadence",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "average_watts",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "kilojoules",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "device_watts",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "has_heartrate",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "average_heartrate",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "max_heartrate",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "elev_high",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "elev_low",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "pr_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "total_photo_count",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "has_kudoed",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "suffer_score",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "description",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "calories",
+        "type": "FLOAT"
+    },
+    {
+        "mode": "REPEATED",
+        "name": "segment_efforts",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "resource_state",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "activity",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "resource_state",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "athlete",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "resource_state",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "elapsed_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "moving_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "start_date",
+                "type": "DATETIME"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "start_date_local",
+                "type": "DATETIME"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "distance",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "start_index",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "end_index",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "device_watts",
+                "type": "BOOLEAN"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "segment",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "resource_state",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "name",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "activity_type",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "distance",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "average_grade",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "maximum_grade",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "elevation_high",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "elevation_low",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "REPEATED",
+                        "name": "start_latlng",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "REPEATED",
+                        "name": "end_latlng",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "start_latitude",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "start_longitude",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "end_latitude",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "end_longitude",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "climb_category",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "city",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "state",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "country",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "private",
+                        "type": "BOOLEAN"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "hazardous",
+                        "type": "BOOLEAN"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "starred",
+                        "type": "BOOLEAN"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "kom_rank",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "pr_rank",
+                "type": "STRING"
+            },
+            {
+                "mode": "REPEATED",
+                "name": "achievements",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "type_id",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "rank",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "hidden",
+                "type": "BOOLEAN"
+            }
+        ]
+    },
+    {
+        "mode": "REPEATED",
+        "name": "splits_metric",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "distance",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "elapsed_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "elevation_difference",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "moving_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "split",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_heartrate",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "pace_zone",
+                "type": "INTEGER"
+            }
+        ]
+    },
+    {
+        "mode": "REPEATED",
+        "name": "splits_standard",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "distance",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "elapsed_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "elevation_difference",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "moving_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "split",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_heartrate",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "pace_zone",
+                "type": "STRING"
+            }
+        ]
+    },
+    {
+        "mode": "REPEATED",
+        "name": "laps",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "resource_state",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "activity",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "resource_state",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "athlete",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "resource_state",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "elapsed_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "moving_time",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "start_date",
+                "type": "DATETIME"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "start_date_local",
+                "type": "DATETIME"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "distance",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "start_index",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "end_index",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "total_elevation_gain",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "max_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_cadence",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_heartrate",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "max_heartrate",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "device_watts",
+                "type": "BOOLEAN"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_watts",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "lap_index",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "split",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "pace_zone",
+                "type": "INTEGER"
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "gear",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "primary",
+                "type": "BOOLEAN"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "resource_state",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "distance",
+                "type": "INTEGER"
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "partner_brand_tag",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "photos",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "primary",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "unique_id",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "urls",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "mode": "NULLABLE",
+                                "name": "s600",
+                                "type": "STRING"
+                            },
+                            {
+                                "mode": "NULLABLE",
+                                "name": "s100",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "source",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "use_primary_photo",
+                "type": "BOOLEAN"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "count",
+                "type": "INTEGER"
+            }
+        ]
+    },
+    {
+        "mode": "REPEATED",
+        "name": "highlighted_kudosers",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "destination_url",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "display_name",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "avatar_url",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "show_name",
+                "type": "BOOLEAN"
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "similar_activities",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "effort_count",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "min_average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "mid_average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "max_average_speed",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "pr_rank",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "frequency_milestone",
+                "type": "FLOAT"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "trend",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "REPEATED",
+                        "name": "speeds",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "current_activity_index",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "min_speed",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "mid_speed",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "max_speed",
+                        "type": "FLOAT"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "direction",
+                        "type": "FLOAT"
+                    }
+                ]
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "resource_state",
+                "type": "INTEGER"
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "device_name",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "embed_token",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "segment_leaderboard_opt_out",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "leaderboard_opt_out",
+        "type": "BOOLEAN"
+    },
+    {
+        "mode": "REPEATED",
+        "name": "best_efforts",
+        "type": "STRING"
+    }
+]

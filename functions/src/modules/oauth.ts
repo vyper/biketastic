@@ -12,7 +12,7 @@ const OAUTH_SCOPES = 'view_private';
 
 app.get('/token', async (req, res) => {
   const params = {
-    client_id: process.env.STRAVA_CLIENT_ID || functions.config().strava.client_id,
+    client_id: functions.config().strava.client_id,
     redirect_uri: OAUTH_REDIRECT_URI,
     response_type: 'code',
     scope: OAUTH_SCOPES,
@@ -25,8 +25,8 @@ app.get('/token', async (req, res) => {
 
 app.get('/callback', async (req, res) => {
   const params = {
-    client_id: process.env.STRAVA_CLIENT_ID || functions.config().strava.client_id,
-    client_secret: process.env.STRAVA_CLIENT_SECRET || functions.config().strava.client_secret,
+    client_id: functions.config().strava.client_id,
+    client_secret: functions.config().strava.client_secret,
     code: req.query.code,
   };
 
