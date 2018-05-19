@@ -7,7 +7,7 @@ import * as querystring from 'querystring';
 
 const app = express();
 
-const OAUTH_REDIRECT_URI = 'https://us-central1-biketastic-x23.cloudfunctions.net/oauth/callback';
+const OAUTH_REDIRECT_URI = 'https://biketastic.net/popup.html';
 const OAUTH_SCOPES = 'view_private';
 
 app.get('/token', async (req, res) => {
@@ -40,7 +40,7 @@ app.get('/callback', async (req, res) => {
 
   const firebaseToken = await createFirebaseAccount(stravaUserID, displayName, photoURL, email, accessToken);
 
-  return res.status(200).json({ token: firebaseToken });
+  return res.status(200).jsonp({ token: firebaseToken });
 });
 
 function createFirebaseAccount(stravaUserID, displayName, photoURL, email, accessToken) {
