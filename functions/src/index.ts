@@ -3,6 +3,7 @@ import * as admin     from 'firebase-admin';
 
 import oauth       from './modules/oauth';
 import webhooks    from './modules/webhooks';
+import createEvent from './modules/events';
 
 admin.initializeApp({
   credential: admin.credential.cert({
@@ -13,5 +14,8 @@ admin.initializeApp({
   databaseURL: `https://${process.env.GCLOUD_PROJECT}.firebaseio.com`
 });
 
-exports.oauth    = functions.https.onRequest(oauth);
-exports.webhooks = functions.https.onRequest(webhooks);
+exports.oauth       = functions.https.onRequest(oauth);
+exports.webhooks    = functions.https.onRequest(webhooks);
+exports.createEvent = functions.firestore
+  .document('events/{eventId}')
+  .onCreate(event => createEvent(event, console));
