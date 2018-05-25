@@ -89,17 +89,17 @@
     {
         "mode": "NULLABLE",
         "name": "utc_offset",
-        "type": "INTEGER"
+        "type": "FLOAT"
     },
     {
         "mode": "REPEATED",
         "name": "start_latlng",
-        "type": "STRING"
+        "type": "FLOAT"
     },
     {
         "mode": "REPEATED",
         "name": "end_latlng",
-        "type": "STRING"
+        "type": "FLOAT"
     },
     {
         "mode": "NULLABLE",
@@ -638,7 +638,7 @@
             {
                 "mode": "NULLABLE",
                 "name": "pace_zone",
-                "type": "STRING"
+                "type": "INTEGER"
             }
         ]
     },
@@ -816,7 +816,7 @@
             {
                 "mode": "NULLABLE",
                 "name": "distance",
-                "type": "INTEGER"
+                "type": "FLOAT"
             }
         ]
     },
@@ -1015,6 +1015,11 @@
     {
         "mode": "REPEATED",
         "name": "best_efforts",
+        "type": "STRING"
+    },
+    {
+        "mode": "REPEATED",
+        "name": "available_zones",
         "type": "STRING"
     }
 ]
