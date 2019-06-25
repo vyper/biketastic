@@ -7,7 +7,7 @@ import * as querystring from 'querystring';
 
 const app = express();
 
-const OAUTH_REDIRECT_URI = 'https://biketastic.net/popup.html';
+const OAUTH_REDIRECT_URI = 'https://biketastic-x23.web.app/popup.html';
 const OAUTH_SCOPES = 'view_private';
 
 app.get('/token', async (req, res) => {
